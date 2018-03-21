@@ -1,0 +1,207 @@
+* {
+  box-sizing: border-box;
+}
+
+
+.grid {
+	grid-template-columns: auto;
+	grid-template-rows: auto auto auto auto auto
+		"header"
+		"nav"
+		"main"
+		"aside"
+		"footer";
+	max-width: 100%;
+	background-color: white;
+	padding-top: 40px;
+	padding-bottom: 40px; 
+	}
+
+header.home {
+	grid-area: header; }
+
+nav.home {
+	grid-area: nav; 
+    background: #e8e8e8;
+    width: 100%;
+    padding: auto;
+    }
+
+nav.home ul {
+  list-style: none;
+  padding: 1rem;
+  text-align: center;
+  display: inline-flex;
+}
+
+
+nav.home ul li a {
+  color: #1b1b1b;
+  padding: 3px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  display: inline-flex;
+}
+
+nav.home ul li a:hover {
+  color: #e5a4a4;
+}
+
+
+main.home {
+	grid-area: nav;
+	color: #1b1b1b;
+ 	font-family: 'Montserrat', sans-serif;
+ 	font-size: 100%;
+ 	padding: 0em 15em 0em 15em;
+ 	width: 100%;
+ }
+
+ #top, #bottom, #left, #right {
+    background: #e5d5d5;
+    position: fixed;
+    }
+    #left, #right {
+        top: 0; bottom: 0;
+        width: 20px;
+        }
+        #left { left: 0; }
+        #right { right: 0; }
+        
+    #top, #bottom {
+        left: 0; right: 0;
+        height: 20px;
+        }
+        #top { top: 0; }
+        #bottom { bottom: 0; }
+
+
+h1 {  	
+	font-family: 'Great Vibes', cursive;
+ 	color: #000000;
+ 	font-size: 1.5rem;
+ 	top: 0rem;
+ 	text-align: center; }
+
+
+.me{
+	height: 300px;
+	width: 300px;
+	padding: 5px;
+ 	padding-bottom: 20px;
+	position: relative;
+	top: 0rem;
+	border-radius: 70%;
+	display: block;
+ 	margin-left: auto;
+  	margin-right: auto;
+ 	margin-bottom: auto;
+   }
+
+
+aside.home {
+	grid-area: aside;}
+
+ .pictures{
+  text-align: center;
+ }
+
+ .akpsi {
+    height: 150px;
+    width: 150px;
+    padding: 3px;
+
+}
+
+.dphie{
+    height: 200px;
+    width: 200px;
+    padding: 3px;
+   
+}
+
+.drexel{
+    height: 150px;
+    width: 150px;
+    padding: 3px;
+    
+}
+
+footer.home {
+	grid-area: footer;
+ 	background: #e8e8e8;}
+
+footer.home ul {
+  list-style: none;
+  margin: 15px;
+  padding: .01rem 2rem 0;
+  text-align: center;
+  display: inline-flex;
+}
+
+
+footer.home ul li a {
+  color: #1b1b1b;
+  display: inline-block;
+  padding: 4px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+}
+
+footer.home ul li a:hover {
+  color: #e5a4a4;
+}
+
+
+/* Page 2 - My Experiences */
+
+.goldman {
+    height: 150px;
+    width: 150px;
+    padding: 10px;
+    
+
+}
+
+.gt{
+    height: 150px;
+    width: 250px;
+    padding: 10px;
+   
+    
+}
+
+.chubb{
+    height: 150px;
+    width: 100px;
+    padding: 10px;
+  
+    
+}
+
+/* Responsive Elements - Media Queries */
+
+/* IPhone 6 */
+
+@media only screen and (min-width: 375px) {
+	.me{
+	padding: 10px;
+	top: 0rem;
+	
+}
+ 	
+main.home {
+	padding: 0rem 5rem 0rem 5rem;
+}
+
+aside.home {
+	padding: 0rem 0rem 5rem 0rem;
+}
+
+nav.home {
+	padding: 0rem 1rem 0rem 2rem;
+}
+
