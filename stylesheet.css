@@ -7,11 +7,11 @@
 	grid-template-columns: auto;
 	grid-template-rows: auto;
 	grid-template-areas: 
-		"header"
-		"nav"
-		"main"
-		"aside"
-		"footer";
+		'header'
+		'nav'
+		'main'
+		'aside'
+		'footer';
 	max-width: 100%;
 	background-color: white;
 	padding-top: 40px;
@@ -25,7 +25,7 @@ nav.home {
 	grid-area: nav; 
     background: #e8e8e8;
     width: 100%;
-    padding: 0rem 1rem 0rem 1.5rem;
+    padding: 0rem 2rem 0rem 1.5rem;
     }
 
 nav.home ul {
@@ -51,15 +51,18 @@ nav.home ul li a:hover {
   color: #e5a4a4;
 }
 
+nav.home li {
+	padding-left: 1rem; }
+
 
 main.home {
-	grid-area: nav;
+	grid-area: main;
 	color: #1b1b1b;
  	font-family: 'Montserrat', sans-serif;
  	font-size: 100%;
- 	padding: 0em 5em 0em 5em;
- 	display: block;
- 	justify-content: space-around;
+ 	padding: 5rem;
+ 	display: grid;
+ 	justify-content: center;
  }
 
  #top, #bottom, #left, #right {
@@ -84,8 +87,8 @@ main.home {
 h1 {  	
 	font-family: 'Great Vibes', cursive;
  	color: #000000;
- 	font-size: 1.5rem;
- 	top: 0rem;
+ 	font-size: 1.75rem;
+ 	top: -3rem;
  	text-align: center; }
 
 
@@ -205,17 +208,17 @@ footer.home ul li a:hover {
 	}
 
 	nav.home li {
-		padding-right: 1rem;
+		padding-right: .25rem;
 		justify-content: space-between;
 	}
 
 @media only screen and (min-width: 1024px) {
 	main.home {
-		padding: 0rem 20rem 0rem 20rem;
+		padding: 0rem 19rem 0rem 19rem;
 	}
 
 	nav.home li {
-		padding-right: 1rem;
+		padding-right: .25rem;
 		justify-content: space-between;
 	}}
 
