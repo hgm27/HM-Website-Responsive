@@ -48,7 +48,7 @@ nav.home ul li a {
 }
 
 nav.home ul li a:hover {
-  color: #e5a4a4;
+  	color: #e5a4a4;
 }
 
 nav.home li {
@@ -60,10 +60,10 @@ main.home {
 	color: #1b1b1b;
  	font-family: 'Montserrat', sans-serif;
  	font-size: 100%;
- 	padding: 5rem;
  	display: grid;
  	justify-content: center;
  }
+
 
  #top, #bottom, #left, #right {
     background: #e5d5d5;
@@ -153,7 +153,7 @@ footer.home ul {
 footer.home ul li a {
   color: #1b1b1b;
   display: inline-block;
-  padding: 4px;
+  padding: 3px;
   text-decoration: none;
   text-transform: uppercase;
   font-family: 'Montserrat', sans-serif;
@@ -163,6 +163,8 @@ footer.home ul li a:hover {
   color: #e5a4a4;
 }
 
+footer.home li {
+	padding-left: 1rem; }
 
 /* Page 2 - My Experiences */
 
@@ -215,6 +217,7 @@ footer.home ul li a:hover {
 @media only screen and (min-width: 1024px) {
 	main.home {
 		padding: 0rem 19rem 0rem 19rem;
+		max-width: 80rem;
 	}
 
 	nav.home li {
